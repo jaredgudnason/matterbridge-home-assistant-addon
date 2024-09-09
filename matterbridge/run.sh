@@ -56,6 +56,6 @@ fi
 
 matterbridge -add matterbridge-home-assistant
 
-MATTERBRIDGE_OPTIONS=("-bridge" "-docker" "-port $MATTER_PORT" "-frontend $FRONTEND_PORT")
+MATTERBRIDGE_OPTIONS=("-childbridge" "-docker" "-port $MATTER_PORT" "-frontend $FRONTEND_PORT")
 
 matterbridge "${MATTERBRIDGE_OPTIONS[@]}"
